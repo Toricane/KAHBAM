@@ -34,7 +34,7 @@ async def on_ready():
     print(timestamp.strftime(r"%A, %b %d, %Y, %I:%M %p UTC"))
 
 
-status = cycle(['kb.help', 'mention @Prajwal for help!'])
+status = cycle(['kb.help', 'ping @Prajwal for help!'])
 
 
 @bot.event

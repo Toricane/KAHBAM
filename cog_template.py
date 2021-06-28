@@ -11,13 +11,13 @@ class cog_name(commands.Cog, description="description"):
 
     # code here basically
     @commands.command(help="help")
-    async def command_name(ctx):
+    async def command_name(self, ctx):
         await ctx.send("test")
 
     @cog_ext.cog_slash(name="command_name",
                        description="command_description",
                        guild_ids=[764683397528158259])
-    async def _command_name(ctx):
+    async def _command_name(self, ctx):
         await ctx.send("test")
 
 
